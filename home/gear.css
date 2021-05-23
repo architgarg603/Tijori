@@ -1,0 +1,36 @@
+
+.container-gears{
+width: 443px;
+height: 457px;
+margin-left: -286px;
+margin-top: 88px;
+position: fixed;
+top: 250px;
+}
+
+.container-gears .gear1{
+background: url('./images/home/BjgGPow.png') no-repeat;
+width: 164px;
+height: 164px;
+margin-left: 159px;
+margin-top: 380px;
+position: absolute;
+float: right;
+}
+
+.container-gears .gear2{
+background: url('./images/home/jPTWFDu.png') no-repeat;
+width: 328px;
+height: 328px;
+margin-top: 73px;
+float: left;
+}
+
+.container-gears .gear3{
+background: url('./images/home/BjgGPow.png') no-repeat;
+width: 153px;
+height: 161px;
+position: absolute;
+margin-top: 285px;
+margin-left: 270px;
+}

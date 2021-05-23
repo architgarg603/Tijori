@@ -1,0 +1,273 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #000000ef;
+    font-family:'Public Sans', sans-serif;
+}
+
+.div1{
+    background-image: url(./images/home/3065018\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #010101;
+    background-position: top right;
+    height: 100vh;
+    min-width: 100%;
+    padding: 1% 4%;
+}
+.headings{
+
+display: flex;
+justify-content: space-between;
+align-items: center;
+list-style: none;
+color: #fffffff1;
+font-size: 25px;
+font-family: 'Courgette', cursive;
+
+}
+.logo{
+    /* font-weight: bold; */
+    letter-spacing: 3px;
+    font-size: xx-large;
+    cursor: pointer;
+    color: #fffffff1;
+font-size: 25px;
+font-family: 'Courgette', cursive;
+
+}
+.logo span{
+    color: red;
+}
+
+.content{
+color: #fffffff1;
+margin-left: 100px;
+margin-top:  calc( 50vh - 216px );
+max-width: 45%;
+}
+.content h1{
+font-size: 60px;
+font-weight: 600;
+}
+.content h3{
+font-size: 20px;
+font-weight: 400;
+margin-top: 10px;
+}
+
+.LoginBtn{
+border: 1px solid #293754;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 20px;
+width: 130px;
+height: 40px;
+border-radius: 30px;
+transition: 1s;
+cursor: pointer;
+font-weight: 600;
+}
+.LoginBtn:hover{
+transform: scale(1.1);
+}
+.workSub{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+    margin-top: 90px;
+
+}
+.work{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 300%;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    color: #fffffff1;
+}
+.div2,.div3,.div4,.div5{
+display: flex;
+justify-content: space-between;
+padding: 0px 15%;
+align-items: center;
+height: 500px ;
+width: 100%;
+border-color: white;
+transition: 0.8s;
+position: relative;
+bottom: -80px;
+opacity: 0;
+}
+.div2:hover{
+    bottom: 0px;
+}
+.image2{
+background-image: url(./images/home/website-maintenance.svg);
+background-size: cover;
+background-repeat: no-repeat;
+height: 80%;
+width: 50%;
+background-position:  0%;
+}
+.content2,.content3,.content4,.content5{
+max-width: 45%;
+}
+.content2 h1, .content3 h1 , .content4 h1, .content5 h1{
+color: #fffffff1;
+font-size: 40px;
+font-weight: 600;
+}
+.content2 p , .content3 p , .content4 p, .content5 p{
+color: #fffffff1;
+font-size: 20px;
+font-weight: 500;
+margin-top: 20px;
+}
+.content3,.content5{
+    text-align: right;
+}
+
+.image3{
+background-image: url(./images/home/pie-chart.svg);
+background-size: 80%;
+background-repeat: no-repeat;
+height: 100%;
+width: 50%;
+background-position: left;
+}
+.image4{
+background-image: url(./images/home/support-center-1768669-1504145.webp);
+background-size: contain;
+background-size: 80%;
+background-repeat: no-repeat;
+height: 100%;
+width: 50%;
+background-position: right;
+}
+
+.image5{
+background-image: url(./images/home/encryption-key-management-best-practices.jpg);
+background-size: auto;
+background-repeat: no-repeat;
+background-size: 80%;
+height: 100%;
+width: 50%;
+background-position: left;
+}
+
+.popup{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    backdrop-filter: blur(8px);
+    padding: 20px 60px;
+    display: none;
+}
+
+.wrap{
+    position: relative;
+    width: 50%;
+    height: 55%;
+    margin: 15vh auto;
+    border-radius: 20px;
+    display: flex;
+    background-color: white;
+    overflow: hidden;
+}
+.login,.signup{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 40px;
+    padding-top: 20px;
+}
+.close{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: x-large;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.wrap .heading{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.wrap input{
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid gray;
+    font-size: large;
+    padding: 5px 5px 5px 0px;
+    color: gray;
+}
+.email,.name{
+    margin-bottom: 20px;
+}
+.signinBtn,.signupBtn{
+    width: 100px;
+    height: 40px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 15px;
+    border: 1px solid gray;
+}
+
+.signinOpt span,.signupOpt span{
+    color: rgb(0, 0, 164);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.popupImg{
+    position: absolute;
+    top: 0px;
+    left: 0%;
+    height: 100%;
+    width: 50%;
+    transition: .5s;
+
+}
+.shiftLeft{
+    left: 0px;
+    
+}
+.shiftRight{
+    right: 0px;
+
+}
+.signupMsg,.loginMsg{
+    color: red;
+    font-weight: bolder;
+    font-size: large;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 25px;
+    margin-bottom: 10px;
+}
