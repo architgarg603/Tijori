@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="left">
+        <div class="btns">
+            <div class="profileImg">
+                <div class="editBtn">Change</div>
+            </div>
+            <div class="profileName">Archit</div>
+            <label for="AddFiles" class="addFile">Add File</label>
+            <input type="file" name="" style="display: none;" id="AddFiles">
+            <div class="deleteBtn">Delete File</div>
+        </div>
+        <div class="logoutBtn">Logout</div>
+    </div>
+    <div class="right">
+
+        <div class="file">
+            <div class="type"><i class="far fa-file-word doc"></i></div>
+            <div class="fileName">Abcd.txt</div>
+        </div>
+        <div class="file">
+            <div class="type"><i class="fas fa-headphones-alt audio"></i></div>
+            <div class="fileName">Abcd.txt</div>
+        </div>
+        <div class="file">
+            <div class="type"><i class="fas fa-video video"></i></div>
+            <div class="fileName">Abcd.txt</div>
+        </div>
+
+        <div class="deletePopUp"  >
+            <div class="wrap"></div>
+        </div>
+        <div class="addPrivateKey">
+            <div class="head">Enter Private Key</div>
+            <input type="password" name="" id="addPrivateKey" placeholder="Enter Key">
+            <div class="submitKey">Submit</div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

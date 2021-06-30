@@ -1,0 +1,226 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 20px ;
+    margin: 0;
+    background-color: #242424;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.left,.right{
+    height: calc( 100vh - 40px );
+    width: 15%;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    box-shadow: inset 6px 6px 8px rgb(0 0 0 / 50%), inset -4px -4px 15px rgb(255 255 255 / 10%), 5px 5px 15px rgb(0 0 0 / 50%), -5px -5px 15px rgb(255 255 255 / 10%);
+}
+
+.left{
+    padding: 50px 25px 20px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.btns{
+    width: 100%;
+    height: 80%;
+}
+.profileImg{
+    background-color: rebeccapurple;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+.editBtn{
+    position: absolute;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    background-color: rgba(128, 128, 128, 0.77);
+    width: 100%;
+    height: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    bottom: -30px;
+    color: black;
+    transition: 0.2s;
+}
+
+.profileImg:hover .editBtn{
+    bottom: 0px;
+}
+
+
+.profileName,.addFile,.deleteBtn,.logoutBtn{
+    font-size: x-large;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    word-break: break-all;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.logoutBtn{
+    margin: 0px;
+}
+.profileName{
+    margin-bottom: 50px;
+    cursor: default;
+}
+.addFile i,.deleteBtn i{
+    margin-right: 20px;
+}
+
+.right{
+    width: 83%;
+    position: relative;
+}
+
+.deletePopUp{
+    position: absolute;
+    max-width: 0px;
+    top: calc( 50% - 150px );
+    left: calc( 50% - 300px);    
+    display: none;
+    overflow: hidden;
+
+}
+.activePopUp{
+    max-width: 600px !important;
+}
+.wrap{
+    min-width: 600px;
+    max-width: 600px;
+    min-height: 150px;
+    flex-wrap: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xxx-large;
+    color: #6CC0B4;
+    border-radius: 30px;
+    background-color: #3A3A3A;
+  
+}
+.deleteBtn,.active{
+    position: relative;
+}
+.deleteBtn::after{
+    content: ' ';
+    position: absolute;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    color:#6CC0B4;
+    background-color: #6CC0B4;
+    transition: 0.3s;
+}
+.active::after{
+    content: ' ';
+    position: absolute;
+    bottom: -5px;
+    width: 70%;
+    height: 2px;
+    color:#6CC0B4;
+    background-color: #6CC0B4;
+    transition: 0.3s;
+}
+.deleteBtn:hover::after{
+    width: 70%;
+}
+.addPrivateKey{
+    position: absolute;
+    width: 600px;
+    height: 200px;
+    top: calc( 50% - 150px );
+    left: calc( 50% - 300px); 
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: #6CC0B4;
+    border-radius: 30px;
+    background-color: #3A3A3A; 
+    padding: 20px;  
+}
+.addPrivateKey .head{
+    font-size: xx-large;
+    font-weight: bold;
+}
+.submitKey{
+    font-size: x-large;
+    border: 1px solid #6CC0B4;
+    border-radius: 20px;
+    width: 130px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#addPrivateKey{
+    width: 80%;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #6CC0B4;
+    font-weight: bold;
+    padding:  0px 10px ;
+    color: #6CC0B4;
+    font-size: x-large;
+}
+
+.right{
+    padding: 40px;
+    justify-content: flex-start !important;
+    flex-direction: row !important;
+    flex-wrap: wrap;
+}
+
+.file{
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    padding: 20px 10px;
+    flex-direction: column;
+    word-break: break-all;
+    cursor: pointer;
+}
+.file .type{
+    font-size: xxx-large;
+    color: white;
+    margin-bottom: 5px;
+}
+.doc{
+    text-shadow:0px 0px 10px  rgb(13, 255, 0),
+                0px 0px 30px  rgb(13, 255, 0);
+}
+.audio{
+    text-shadow:0px 0px 10px  #00b3ff,
+                0px 0px 30px  #00b3ff;
+}
+.video{
+    text-shadow:0px 0px 10px  #ff0000,
+                0px 0px 30px  #ff0000;
+}
+.fileName{
+    color: white;
+}
